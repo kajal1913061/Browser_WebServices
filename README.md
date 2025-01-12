@@ -1,10 +1,32 @@
 # Browser_WebServices
-Browserstack machine coding
-Implement the following 4 WebServices in the choice of your language.
-startBrowser() -> Start the browser(User Input) and opens given URL(User Input)
-stopBrowser()-> Kill the specified opened browser.
-getLatestURL()-> Fetched last visited URL (Doesn’t matter browser is running or it’s closed)
-deleteAllHistory()-> Delete all the data -> Browser History, cookies, cache, saved passwords, bookmarks etc.
-For the last 2, you’ll have to find how does any browser stores user-specific data locally. For Mozilla Firefox, it maintains places.SQLite, (And many similar files)So you’ll have to use JDBC Driver to extract/delete data from .sqlite files of Selenium or any 3rd party automation tool is strictly prohibited.
 
-For more clarity see gfg https://www.geeksforgeeks.org/browserstack-interview-experience-for-freshers/
+This project implements a set of web services to control and manage browser sessions, as part of Browserstack machine coding.
+
+## Web Services
+
+1. **startBrowser()**
+   - Starts the specified browser (user input) and opens the given URL (user input).
+
+2. **stopBrowser()**
+   - Kills the specified opened browser.
+
+3. **getLatestURL()**
+   - Retrieves the last visited URL, regardless of whether the browser is running or closed.
+
+4. **deleteAllHistory()**
+   - Deletes all user-specific data including browser history, cookies, cache, saved passwords, bookmarks, etc.
+
+## Implementation Details
+
+For the `getLatestURL` and `deleteAllHistory` services, you will need to understand how browsers store user-specific data locally. For example, Mozilla Firefox uses files like `places.sqlite`. You will need to use appropriate methods or libraries such as JDBC for database interactions.
+
+For more details, refer to this [GeeksforGeeks article](https://www.geeksforgeeks.org/browserstack-interview-experience-for-freshers/).
+
+## Setup and Usage
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/kajal1913061/Browser_WebServices.git
+   cd Browser_WebServices
+
+  
