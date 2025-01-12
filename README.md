@@ -28,5 +28,25 @@ For more details, refer to this [GeeksforGeeks article](https://www.geeksforgeek
    ```sh
    git clone https://github.com/kajal1913061/Browser_WebServices.git
    cd Browser_WebServices
+2. How to run this project
+    npm init -y
+    npm install express
+    node app.js
+    npm start
+You should see something like this in the terminal: 
+Example app listening on port 3000
+
+3. Test the Endpoints(open browser -chrome/safari)
+   Tries all urls for operation
+   
+// http://localhost:3000/start?browser=Safari&url=https://www.facebook.com/
+// http://localhost:3000/start?browser=chrome&url=https://www.facebook.com/
+
+// http://localhost:3000/stop?browser=chrome
+// http://localhost:3000/stop?browser=Safari
+
+// http://localhost:3000/cleanup?browser=Safari
+//http://localhost:3000/geturl?browser=chrome
+
 
   
