@@ -29,10 +29,10 @@ For more details, refer to this [GeeksforGeeks article](https://www.geeksforgeek
    git clone https://github.com/kajal1913061/Browser_WebServices.git
    cd Browser_WebServices
 2. How to run this project
-    npm init -y
-    npm install express
-    node app.js
-    npm start
+    - npm init -y
+    - npm install express
+    -  node app.js
+    -  npm start
 You should see something like this in the terminal: 
 Example app listening on port 3000
 
